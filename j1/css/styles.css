@@ -44,6 +44,26 @@ section:nth-child(odd) {
   background: #f8f8f8;
 }
 
+section .container {
+  width: 820px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 26px;
+  text-align: center;
+  margin: 0 0 90px;
+  font-weight: normal;
+}
+
+section:not(.call-to-action) h2::after{
+  /*content: '- title -';*/
+  display: block;
+  font-size: 18px;
+  color: #aaa;
+  padding-top: 10px;
+}
+
 /* header */
 header {
   background: url('../img/bg.png');
@@ -71,4 +91,74 @@ header img {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+/* features */
+
+.features h2::after {
+  content: '- Features -';
+}
+
+.desc {
+  width: 360px;
+}
+
+.pull-right {
+  float: right;
+  padding-left: 40px;
+}
+
+.pull-left {
+  float: left;
+  padding-right: 40px
+}
+
+.row {
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.features h3 {
+  font-size: 24px;
+}
+
+/* voices */
+
+.voices h2::after {
+  content: '- User Voices -';
+}
+
+.user img {
+  border-radius: 50%;
+  border: 10px solid #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -60px;
+}
+
+.user {
+  background: #fff;
+  width: 250px;
+  box-sizing: border-box;
+  padding: 65px 40px 26px;
+  position: relative;
+}
+
+.user h3 {
+  text-align: center;
+}
+
+.voices > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.voices h2 {
+  margin-bottom: 150px;
 }
