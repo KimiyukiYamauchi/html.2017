@@ -14,7 +14,7 @@ body {
 
 p {
   line-height: 2;
-   word-wrap: break-word; /* 文字列の折り返し */
+  word-wrap: break-word; /* 文字列の折り返し */
 }
 
 .container {
@@ -40,6 +40,10 @@ section:nth-child(even) {
   float: right;
   font-size: 24px;
   coursor: pointer;
+}
+
+.pc-menu {
+  display: none;
 }
 
 /* features */
@@ -69,6 +73,25 @@ section:nth-child(even) {
   margin-bottom: 60px;
 }
 
+/* how-to-use */
+.how-to-use iframe {
+  /*width: 100%;
+  height: auto;*/
+  /*display: none;*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.iframe-wrapper {
+  padding-bottom: 56.25%;
+  height: 0;
+  /*background: pink;*/
+  position: relative;
+}
+
 /* medium */
 @media (min-width: 570px) {
 
@@ -95,6 +118,19 @@ section:nth-child(even) {
     overflow: hidden;
   }
 
+  .news .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news .item {
+    width: 30%;
+  }
+
+  .news .item img {
+    width: 100%;
+  }
+
 }
 
 /* large */
@@ -104,4 +140,27 @@ section:nth-child(even) {
     background: lime;
   }
 */
+
+  .container {
+    width: 820px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .pc-menu {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+  }
+
+  .pc-menu > li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+  }
 }
