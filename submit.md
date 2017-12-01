@@ -1,0 +1,3 @@
+- ユーザの入力値をサーバのpost/getする方法
+    - formタグのinput、type="submit"で、渡す
+    - javascriptを利用する
